@@ -1,0 +1,11 @@
+sentence-transformers==2.2.2 # because we will be using opensource embedding model to generate vector embedding {sentence-transformers is a python package it will use hugging face platform to download the model}
+langchain # framework to use the language models. helps in Model integration.
+flask # to create user interface
+pypdf # to read the pdf file and extract the text from it.
+python-dotenv # to store the environment variables in the .env file and use them in the code
+pinecone[grpc] # to store the vector embeddings in the pinecone database and perform similarity search
+langchain-pinecone # to integrate the pinecone database with the langchain framework to store the vector embeddings in the pinecone database.
+langchain_community # to use the community models in the langchain framework
+langchain_openai # to use the openai models in the langchain framework
+langchain_experimental # to use the experimental models in the langchain framework
+-e . # to install the package in the editable mode
